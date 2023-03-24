@@ -1,0 +1,35 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Library eading Status</title>
+	
+	
+	</head>
+	
+	<body>
+		<script>
+			var library = [ { author: 'Bill Gates', 
+							title: 'The Road Ahead', 
+							readingStatus: true }, 
+							{ author: 'Steve Jobs', 
+							title: 'Walter Isaacson', 
+							readingStatus: true }, 
+							{ author: 'Suzanne Collins', 
+							title: 'Mockingjay: The Final Book of The Hunger Games', 
+							readingStatus: false }];
+			for(a in library){
+				if(library[a].readingStatus){
+					console.log("Already read"+" "+library[a].title+" "+"by"+" "+library[a].author+".")
+				}
+				else{
+					console.log("You still need to read"+" "+library[a].title+" "+ "by"+" "+library[a].author+".")
+				}
+			}
+			
+		</script>
+	</body>
+</html>
